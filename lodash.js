@@ -15,8 +15,12 @@ Vaš je zadatk:
 
 //1.
 
-var dobro = "1234567890abcdef";
+var dobro = "1234567890";
 var lose = "1123456abcdefghij";
+const pi = 3.14;
+
+//******* */ KONSTANTA JE NEPROMJENJIVA VARIJABLA I NE MOŽE BITI UNASSIGNED, MORA IMATI NEKU VRIJEDNOST*******
+
 var jedinstveniZnakovi = function (password) {
     //kod za 2.zadatak
     var mojNiz = [];
@@ -58,13 +62,15 @@ function isMoreThan10(password) {
 }
 
 function skratiNa10(password) {
+    /*if (password.length <=10) return password;
     var tmpPassword = "";
     for (let i = 0; i < 10; i++) {
         var charAtIndex = password.charAt(i);
         tmpPassword += charAtIndex;
         
     }
-    return tmpPassword;
+    return tmpPassword;*/
+    return password.substring(0,10);
 }
 
 console.log("password je ispravan: " + jedinstveniZnakovi(dobro));
